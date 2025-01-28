@@ -4,16 +4,31 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="012edf08-f318-4b8f-bb32-96dc2d9e7c54" name="Changes" comment="task-5051" />
+    <list default="true" id="012edf08-f318-4b8f-bb32-96dc2d9e7c54" name="Changes" comment="task-5051 323">
+      <change afterPath="$PROJECT_DIR$/from_book_headfirst_ex1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="yaadamen &lt;adamenko.e.a59@gmail.com&gt;" />
+      </list>
+    </option>
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="main" />
+        <entry key="$PROJECT_DIR$" value="cfb78dc2f4c9f63346c21833b2b5b1a46c6560b1" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -40,6 +55,16 @@
     }
   ]
 }</component>
+  <component name="GitRewordedCommitMessages">
+    <option name="commitMessagesMapping">
+      <RewordedCommitMessageMapping>
+        <option name="originalMessage" value="task-5051" />
+        <option name="rewordedMessage" value="TASK-123 Added first PR&#10;&#10;(cherry picked from commit e8cdb53d491bc88156ede8d7b7837b49112d8cbc)&#10;&#10;&#10;task-5051" />
+      </RewordedCommitMessageMapping>
+    </option>
+    <option name="currentCommit" value="1" />
+    <option name="onto" value="642aa74024c9697c9f1d0e511e615c2a3e4e6094" />
+  </component>
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
     &quot;url&quot;: &quot;git@github.com:paroman-alt/myFirstRep.git&quot;,
@@ -63,11 +88,12 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Python.from_book_headfirst_ex1.executor": "Run",
     "Python.hw.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "3ef1f05f",
+    "git-widget-placeholder": "eabb8622",
     "last_opened_file_path": "/home/roman/git/myFirstRep",
     "settings.editor.selected.configurable": "settings.qodana"
   },
@@ -101,7 +127,39 @@
       <option name="project" value="LOCAL" />
       <updated>1737367599754</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="TASK-123 Added first PR&#10;&#10;(cherry picked from commit e8cdb53d491bc88156ede8d7b7837b49112d8cbc)">
+      <option name="closed" value="true" />
+      <created>1737881349591</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1737881349591</updated>
+    </task>
+    <task id="LOCAL-00003" summary="squash! task-5051">
+      <option name="closed" value="true" />
+      <created>1737881587359</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1737881587359</updated>
+    </task>
+    <task id="LOCAL-00004" summary="squash! task-5051">
+      <option name="closed" value="true" />
+      <created>1737881650866</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1737881650866</updated>
+    </task>
+    <task id="LOCAL-00005" summary="task-5051 323">
+      <option name="closed" value="true" />
+      <created>1738048430569</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1738048430569</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -169,7 +227,10 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <MESSAGE value="TASK-123 Added first PR&#10;&#10;(cherry picked from commit e8cdb53d491bc88156ede8d7b7837b49112d8cbc)" />
+    <MESSAGE value="squash! task-5051" />
     <MESSAGE value="task-5051" />
-    <option name="LAST_COMMIT_MESSAGE" value="task-5051" />
+    <MESSAGE value="task-5051 323" />
+    <option name="LAST_COMMIT_MESSAGE" value="task-5051 323" />
   </component>
 </project>
