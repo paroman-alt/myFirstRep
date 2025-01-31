@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="012edf08-f318-4b8f-bb32-96dc2d9e7c54" name="Changes" comment="task-5051 323">
-      <change afterPath="$PROJECT_DIR$/from_book_headfirst_ex1.py" afterDir="false" />
+    <list default="true" id="012edf08-f318-4b8f-bb32-96dc2d9e7c54" name="Changes" comment="rr">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trytry.py" beforeDir="false" afterPath="$PROJECT_DIR$/trytry.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,8 +33,14 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RESET_MODE" value="SOFT" />
+    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
+  &quot;history&quot;: [
+    {
+      &quot;author&quot;: &quot;paroman-alt&quot;
+    }
+  ],
   &quot;lastFilter&quot;: {}
 }</component>
   <component name="GitHubPullRequestState">{
@@ -48,22 +54,29 @@
     },
     {
       &quot;id&quot;: {
+        &quot;id&quot;: &quot;PR_kwDONronmc6I59cS&quot;,
+        &quot;number&quot;: 3
+      },
+      &quot;lastSeen&quot;: 1738050713162
+    },
+    {
+      &quot;id&quot;: {
         &quot;id&quot;: &quot;PR_kwDONronmc6IO-Jf&quot;,
         &quot;number&quot;: 2
       },
-      &quot;lastSeen&quot;: 1737367590372
+      &quot;lastSeen&quot;: 1738050725232
     }
   ]
 }</component>
   <component name="GitRewordedCommitMessages">
     <option name="commitMessagesMapping">
       <RewordedCommitMessageMapping>
-        <option name="originalMessage" value="task-5051" />
-        <option name="rewordedMessage" value="TASK-123 Added first PR&#10;&#10;(cherry picked from commit e8cdb53d491bc88156ede8d7b7837b49112d8cbc)&#10;&#10;&#10;task-5051" />
+        <option name="originalMessage" value="# Please include a useful commit message!" />
+        <option name="rewordedMessage" value="squashed commits" />
       </RewordedCommitMessageMapping>
     </option>
     <option name="currentCommit" value="1" />
-    <option name="onto" value="642aa74024c9697c9f1d0e511e615c2a3e4e6094" />
+    <option name="onto" value="bbad0c58e8e5fc8b6450c8c16e7354825900ac26" />
   </component>
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
@@ -72,7 +85,7 @@
   }
 }</component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/hw.py" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/hook001.py" root0="SKIP_INSPECTION" />
   </component>
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="QODANA_PROBLEMS_VIEW_TAB" />
@@ -85,24 +98,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "Python.from_book_headfirst_ex1.executor": "Run",
-    "Python.hw.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "eabb8622",
-    "last_opened_file_path": "/home/roman/git/myFirstRep",
-    "settings.editor.selected.configurable": "settings.qodana"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;Python.from_book_headfirst_ex1.executor&quot;: &quot;Run&quot;,
+    &quot;Python.hook001.executor&quot;: &quot;Run&quot;,
+    &quot;Python.hw.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;branchForTest&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/roman/git/myFirstRep&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;settings.qodana&quot;
   },
-  "keyToStringList": {
-    "ChangesTree.GroupingKeys": [
-      "directory"
+  &quot;keyToStringList&quot;: {
+    &quot;ChangesTree.GroupingKeys&quot;: [
+      &quot;directory&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -159,7 +173,23 @@
       <option name="project" value="LOCAL" />
       <updated>1738048430569</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="addNewFile">
+      <option name="closed" value="true" />
+      <created>1738049720759</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1738049720759</updated>
+    </task>
+    <task id="LOCAL-00007" summary="addNewFile">
+      <option name="closed" value="true" />
+      <created>1738297294662</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1738297294662</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -231,6 +261,9 @@
     <MESSAGE value="squash! task-5051" />
     <MESSAGE value="task-5051" />
     <MESSAGE value="task-5051 323" />
-    <option name="LAST_COMMIT_MESSAGE" value="task-5051 323" />
+    <MESSAGE value="addNewFile" />
+    <MESSAGE value="squashed commits" />
+    <MESSAGE value="rr" />
+    <option name="LAST_COMMIT_MESSAGE" value="rr" />
   </component>
 </project>
