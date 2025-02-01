@@ -1,0 +1,17 @@
+Index: neww.py
+===================================================================
+diff --git a/neww.py b/neww.py
+deleted file mode 100644
+--- a/neww.py	(revision 4696a2b0df3513d2875ca3861d10905b7f94a667)
++++ /dev/null	(revision 4696a2b0df3513d2875ca3861d10905b7f94a667)
+@@ -1,10 +0,0 @@
+-edge = int(input())
+-
+-if edge in range(0, 13):
+-    print("детство")
+-elif edge in range(14, 24):
+-    print("молодость")
+-elif edge in range(25, 59):
+-    print("зрелость")
+-elif edge >= 60:
+-    print("старость")

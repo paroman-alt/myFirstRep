@@ -1,70 +1,64 @@
-Index: .idea/workspace.xml
+Index: .idea/vcs.xml
 IDEA additional info:
-Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
-<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<project version=\"4\">\n  <component name=\"AutoImportSettings\">\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\n  </component>\n  <component name=\"ChangeListManager\">\n    <list default=\"true\" id=\"012edf08-f318-4b8f-bb32-96dc2d9e7c54\" name=\"Changes\" comment=\"task-5051\" />\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\n  </component>\n  <component name=\"Git.Settings\">\n    <option name=\"RECENT_BRANCH_BY_REPOSITORY\">\n      <map>\n        <entry key=\"$PROJECT_DIR$\" value=\"main\" />\n      </map>\n    </option>\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\n    <option name=\"RESET_MODE\" value=\"SOFT\" />\n  </component>\n  <component name=\"GitHubPullRequestSearchHistory\">{\n  &quot;lastFilter&quot;: {}\n}</component>\n  <component name=\"GitHubPullRequestState\">{\n  &quot;prStates&quot;: [\n    {\n      &quot;id&quot;: {\n        &quot;id&quot;: &quot;PR_kwDONronmc6IO676&quot;,\n        &quot;number&quot;: 1\n      },\n      &quot;lastSeen&quot;: 1737364886889\n    },\n    {\n      &quot;id&quot;: {\n        &quot;id&quot;: &quot;PR_kwDONronmc6IO-Jf&quot;,\n        &quot;number&quot;: 2\n      },\n      &quot;lastSeen&quot;: 1737367590372\n    }\n  ]\n}</component>\n  <component name=\"GithubPullRequestsUISettings\">{\n  &quot;selectedUrlAndAccountId&quot;: {\n    &quot;url&quot;: &quot;git@github.com:paroman-alt/myFirstRep.git&quot;,\n    &quot;accountId&quot;: &quot;e709319c-e621-4ee7-9166-2b74007b5d11&quot;\n  }\n}</component>\n  <component name=\"HighlightingSettingsPerFile\">\n    <setting file=\"file://$PROJECT_DIR$/hw.py\" root0=\"FORCE_HIGHLIGHTING\" />\n  </component>\n  <component name=\"ProblemsViewState\">\n    <option name=\"selectedTabId\" value=\"QODANA_PROBLEMS_VIEW_TAB\" />\n  </component>\n  <component name=\"ProjectColorInfo\">{\n  &quot;associatedIndex&quot;: 4\n}</component>\n  <component name=\"ProjectId\" id=\"2rsvhQoLK713ERsTOnic5BlOC23\" />\n  <component name=\"ProjectViewState\">\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\n    <option name=\"showLibraryContents\" value=\"true\" />\n  </component>\n  <component name=\"PropertiesComponent\"><![CDATA[{\n  \"keyToString\": {\n    \"ASKED_SHARE_PROJECT_CONFIGURATION_FILES\": \"true\",\n    \"Python.hw.executor\": \"Run\",\n    \"RunOnceActivity.ShowReadmeOnStart\": \"true\",\n    \"RunOnceActivity.git.unshallow\": \"true\",\n    \"SHARE_PROJECT_CONFIGURATION_FILES\": \"true\",\n    \"git-widget-placeholder\": \"3ef1f05f\",\n    \"last_opened_file_path\": \"/home/roman/git/myFirstRep\",\n    \"settings.editor.selected.configurable\": \"settings.qodana\"\n  },\n  \"keyToStringList\": {\n    \"ChangesTree.GroupingKeys\": [\n      \"directory\"\n    ]\n  }\n}]]></component>\n  <component name=\"SharedIndexes\">\n    <attachedChunks>\n      <set>\n        <option value=\"bundled-python-sdk-1b1018131e27-aa17d162503b-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-243.22562.180\" />\n      </set>\n    </attachedChunks>\n  </component>\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\n  <component name=\"TaskManager\">\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\n      <changelist id=\"012edf08-f318-4b8f-bb32-96dc2d9e7c54\" name=\"Changes\" comment=\"\" />\n      <created>1737360717291</created>\n      <option name=\"number\" value=\"Default\" />\n      <option name=\"presentableId\" value=\"Default\" />\n      <updated>1737360717291</updated>\n    </task>\n    <task id=\"LOCAL-00001\" summary=\"task-5051\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1737367599754</created>\n      <option name=\"number\" value=\"00001\" />\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1737367599754</updated>\n    </task>\n    <option name=\"localTasksCounter\" value=\"2\" />\n    <servers />\n  </component>\n  <component name=\"Vcs.Log.Tabs.Properties\">\n    <option name=\"OPEN_GENERIC_TABS\">\n      <map>\n        <entry key=\"3699c1e7-a3be-4c40-b22e-e0d2a4b49417\" value=\"TOOL_WINDOW\" />\n        <entry key=\"55f14710-ab18-4ec6-89ac-762082dd2d9e\" value=\"TOOL_WINDOW\" />\n      </map>\n    </option>\n    <option name=\"RECENT_FILTERS\">\n      <map>\n        <entry key=\"Branch\">\n          <value>\n            <list>\n              <RecentGroup>\n                <option name=\"FILTER_VALUES\">\n                  <option value=\"HEAD\" />\n                </option>\n              </RecentGroup>\n              <RecentGroup>\n                <option name=\"FILTER_VALUES\">\n                  <option value=\"main\" />\n                </option>\n              </RecentGroup>\n            </list>\n          </value>\n        </entry>\n      </map>\n    </option>\n    <option name=\"TAB_STATES\">\n      <map>\n        <entry key=\"3699c1e7-a3be-4c40-b22e-e0d2a4b49417\">\n          <value>\n            <State>\n              <option name=\"CUSTOM_BOOLEAN_PROPERTIES\">\n                <map>\n                  <entry key=\"Show.Git.Branches\" value=\"true\" />\n                </map>\n              </option>\n              <option name=\"FILTERS\">\n                <map>\n                  <entry key=\"roots\">\n                    <value>\n                      <list>\n                        <option value=\"$PROJECT_DIR$\" />\n                      </list>\n                    </value>\n                  </entry>\n                </map>\n              </option>\n            </State>\n          </value>\n        </entry>\n        <entry key=\"55f14710-ab18-4ec6-89ac-762082dd2d9e\">\n          <value>\n            <State />\n          </value>\n        </entry>\n        <entry key=\"MAIN\">\n          <value>\n            <State />\n          </value>\n        </entry>\n      </map>\n    </option>\n  </component>\n  <component name=\"VcsManagerConfiguration\">\n    <MESSAGE value=\"task-5051\" />\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"task-5051\" />\n  </component>\n</project>
 Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
 <+>UTF-8
 ===================================================================
-diff --git a/.idea/workspace.xml b/.idea/workspace.xml
---- a/.idea/workspace.xml	(revision cfb78dc2f4c9f63346c21833b2b5b1a46c6560b1)
-+++ b/.idea/workspace.xml	(date 1737881555328)
-@@ -4,16 +4,21 @@
-     <option name="autoReloadType" value="SELECTIVE" />
-   </component>
-   <component name="ChangeListManager">
--    <list default="true" id="012edf08-f318-4b8f-bb32-96dc2d9e7c54" name="Changes" comment="task-5051" />
-+    <list default="true" id="012edf08-f318-4b8f-bb32-96dc2d9e7c54" name="Changes" comment="" />
-     <option name="SHOW_DIALOG" value="false" />
-     <option name="HIGHLIGHT_CONFLICTS" value="true" />
-     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
-     <option name="LAST_RESOLUTION" value="IGNORE" />
-   </component>
-   <component name="Git.Settings">
-+    <option name="PREVIOUS_COMMIT_AUTHORS">
-+      <list>
-+        <option value="yaadamen &lt;adamenko.e.a59@gmail.com&gt;" />
-+      </list>
-+    </option>
-     <option name="RECENT_BRANCH_BY_REPOSITORY">
-       <map>
--        <entry key="$PROJECT_DIR$" value="main" />
-+        <entry key="$PROJECT_DIR$" value="cfb78dc2f4c9f63346c21833b2b5b1a46c6560b1" />
-       </map>
-     </option>
-     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-@@ -67,7 +72,7 @@
-     "RunOnceActivity.ShowReadmeOnStart": "true",
-     "RunOnceActivity.git.unshallow": "true",
-     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
--    "git-widget-placeholder": "3ef1f05f",
-+    "git-widget-placeholder": "cfb78dc2",
-     "last_opened_file_path": "/home/roman/git/myFirstRep",
-     "settings.editor.selected.configurable": "settings.qodana"
-   },
-@@ -101,7 +106,15 @@
-       <option name="project" value="LOCAL" />
-       <updated>1737367599754</updated>
-     </task>
--    <option name="localTasksCounter" value="2" />
-+    <task id="LOCAL-00002" summary="TASK-123 Added first PR&#10;&#10;(cherry picked from commit e8cdb53d491bc88156ede8d7b7837b49112d8cbc)">
-+      <option name="closed" value="true" />
-+      <created>1737881349591</created>
-+      <option name="number" value="00002" />
-+      <option name="presentableId" value="LOCAL-00002" />
-+      <option name="project" value="LOCAL" />
-+      <updated>1737881349591</updated>
-+    </task>
-+    <option name="localTasksCounter" value="3" />
-     <servers />
-   </component>
-   <component name="Vcs.Log.Tabs.Properties">
-@@ -170,6 +183,7 @@
-   </component>
-   <component name="VcsManagerConfiguration">
-     <MESSAGE value="task-5051" />
--    <option name="LAST_COMMIT_MESSAGE" value="task-5051" />
-+    <MESSAGE value="TASK-123 Added first PR&#10;&#10;(cherry picked from commit e8cdb53d491bc88156ede8d7b7837b49112d8cbc)" />
-+    <option name="LAST_COMMIT_MESSAGE" value="TASK-123 Added first PR&#10;&#10;(cherry picked from commit e8cdb53d491bc88156ede8d7b7837b49112d8cbc)" />
-   </component>
- </project>
+diff --git a/.idea/vcs.xml b/.idea/vcs.xml
+new file mode 100644
+--- /dev/null	(date 1738497696461)
++++ b/.idea/vcs.xml	(date 1738497696461)
+@@ -0,0 +1,6 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="VcsDirectoryMappings">
++    <mapping directory="" vcs="Git" />
++  </component>
++</project>
+\ No newline at end of file
+Index: .idea/shelf/Uncommitted_changes_before_Checkout_at_01_02_2025__19_23__Changes_.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/shelf/Uncommitted_changes_before_Checkout_at_01_02_2025__19_23__Changes_.xml b/.idea/shelf/Uncommitted_changes_before_Checkout_at_01_02_2025__19_23__Changes_.xml
+new file mode 100644
+--- /dev/null	(date 1738493975078)
++++ b/.idea/shelf/Uncommitted_changes_before_Checkout_at_01_02_2025__19_23__Changes_.xml	(date 1738493975078)
+@@ -0,0 +1,4 @@
++<changelist name="Uncommitted_changes_before_Checkout_at_01_02_2025,_19_23_[Changes]" date="1738412639156" recycled="false" toDelete="true">
++  <option name="PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_01_02_2025,_19_23_[Changes]/shelved.patch" />
++  <option name="DESCRIPTION" value="Uncommitted changes before Checkout at 01.02.2025, 19:23 [Changes]" />
++</changelist>
+\ No newline at end of file
+Index: .idea/shelf/Uncommitted_changes_before_rebase__Changes_2.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/shelf/Uncommitted_changes_before_rebase__Changes_2.xml b/.idea/shelf/Uncommitted_changes_before_rebase__Changes_2.xml
+new file mode 100644
+--- /dev/null	(date 1738493975079)
++++ b/.idea/shelf/Uncommitted_changes_before_rebase__Changes_2.xml	(date 1738493975079)
+@@ -0,0 +1,4 @@
++<changelist name="Uncommitted_changes_before_rebase_[Changes]2" date="1738418843464" recycled="true" deleted="true">
++  <option name="PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]2/shelved.patch" />
++  <option name="DESCRIPTION" value="Uncommitted changes before rebase [Changes]" />
++</changelist>
+\ No newline at end of file
+Index: .idea/misc.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/misc.xml b/.idea/misc.xml
+new file mode 100644
+--- /dev/null	(date 1738497696451)
++++ b/.idea/misc.xml	(date 1738497696451)
+@@ -0,0 +1,6 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="Black">
++    <option name="sdkName" value="Python 3.12" />
++  </component>
++</project>
 \ No newline at end of file
