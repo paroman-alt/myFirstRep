@@ -12,7 +12,7 @@ def digit_counter_recursion(number):
 #print(digit_counter_recursion(9933))
 
 
-# написать алгоритм разворачивающий цисло (было "123" стало "321")
+# написать алгоритм разворачивающий число (было "123" стало "321")
 # за два цикла
 def reverse_number(number):
     list_of_digits = list()
