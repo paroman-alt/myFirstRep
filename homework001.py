@@ -121,18 +121,16 @@ def max_min_digits(number):
     return max, min
 
 # напиши функцию которая выводит все простые числа от 0 до 10000
+# не уверен что использование среза (slice) - удачное решение
 def prime_numbers_10k():
     prime_list = [1, 2]
     for number in range(3, 10001):
-        was_break = False
-        for sub in range(2, number):
+        for sub in prime_list[1:]:
             if number % sub == 0:
-                was_break = True
                 break
-        if not was_break:
+        else:
             prime_list.append(number)
     return prime_list
-
 
 
 #print(digit_counter_my_version(120003219313))
@@ -141,4 +139,4 @@ def prime_numbers_10k():
 #print(odd_multiple_three(10003))
 #print(reverse_number(9002))
 #print(max_min_digits(777))
-#print(prime_numbers_10k())
+print(prime_numbers_10k())
