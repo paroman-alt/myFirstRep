@@ -1,0 +1,47 @@
+Index: task1.1.py
+===================================================================
+diff --git a/task1.1.py b/task1.1.py
+deleted file mode 100644
+--- a/task1.1.py	(revision 4c3bc10de1107abed89d49fd308e449de3adc276)
++++ /dev/null	(revision 4c3bc10de1107abed89d49fd308e449de3adc276)
+@@ -1,12 +0,0 @@
+-#найти количество четных цифр в числе (задача которую обсуждали на созвоне)
+-#мой вариант решения
+-
+-N = 932324
+-i = 0
+-ans = 1
+-
+-while ans >= 1:
+-    i += 1
+-    ans = N // 10**i
+-    #print(ans)
+-print(i)
+Index: task1.2.py
+===================================================================
+diff --git a/task1.2.py b/task1.2.py
+deleted file mode 100644
+--- a/task1.2.py	(revision 4c3bc10de1107abed89d49fd308e449de3adc276)
++++ /dev/null	(revision 4c3bc10de1107abed89d49fd308e449de3adc276)
+@@ -1,2 +0,0 @@
+-#найти количество четных цифр в числе (задача которую обсуждали на созвоне)
+-#алгоритм который проговорили на занятии
+\ No newline at end of file
+Index: hw.py
+===================================================================
+diff --git a/hw.py b/hw.py
+deleted file mode 100644
+--- a/hw.py	(revision 4c3bc10de1107abed89d49fd308e449de3adc276)
++++ /dev/null	(revision 4c3bc10de1107abed89d49fd308e449de3adc276)
+@@ -1,11 +0,0 @@
+-def print_dog_name():
+-    print("DOG NAME")
+-
+-
+-def print_cat_name():
+-    print("CAT NAME")
+-
+-#fsfssf
+-if __name__ == '__main__':
+-    print_dog_name()
+-    print_cat_name()

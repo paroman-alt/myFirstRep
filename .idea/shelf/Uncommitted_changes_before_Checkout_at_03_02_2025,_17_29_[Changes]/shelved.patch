@@ -1,0 +1,312 @@
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<project version=\"4\">\n  <component name=\"AutoImportSettings\">\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\n  </component>\n  <component name=\"ChangeListManager\">\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\n  </component>\n  <component name=\"FileTemplateManagerImpl\">\n    <option name=\"RECENT_TEMPLATES\">\n      <list>\n        <option value=\"Python Script\" />\n      </list>\n    </option>\n  </component>\n  <component name=\"Git.Merge.Settings\">\n    <option name=\"BRANCH\" value=\"git-branch001\" />\n  </component>\n  <component name=\"Git.Settings\">\n    <option name=\"PREVIOUS_COMMIT_AUTHORS\">\n      <list>\n        <option value=\"yaadamen &lt;adamenko.e.a59@gmail.com&gt;\" />\n      </list>\n    </option>\n    <option name=\"RECENT_BRANCH_BY_REPOSITORY\">\n      <map>\n      </map>\n    </option>\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\n    <option name=\"RESET_MODE\" value=\"SOFT\" />\n    <option name=\"UPDATE_TYPE\" value=\"REBASE\" />\n  </component>\n  <component name=\"GitHubPullRequestSearchHistory\">{\n  &quot;history&quot;: [\n    {\n      &quot;author&quot;: &quot;paroman-alt&quot;\n    }\n  ],\n  &quot;lastFilter&quot;: {}\n}</component>\n  <component name=\"GitHubPullRequestState\">{\n  &quot;prStates&quot;: [\n    {\n      &quot;id&quot;: {\n        &quot;id&quot;: &quot;PR_kwDONronmc6IO676&quot;,\n        &quot;number&quot;: 1\n      },\n      &quot;lastSeen&quot;: 1737364886889\n    },\n    {\n      &quot;id&quot;: {\n        &quot;id&quot;: &quot;PR_kwDONronmc6I59cS&quot;,\n        &quot;number&quot;: 3\n      },\n      &quot;lastSeen&quot;: 1738050713162\n    },\n    {\n      &quot;id&quot;: {\n        &quot;id&quot;: &quot;PR_kwDONronmc6IO-Jf&quot;,\n        &quot;number&quot;: 2\n      },\n      &quot;lastSeen&quot;: 1738050725232\n    }\n  ]\n}</component>\n  <component name=\"GitRewordedCommitMessages\">\n    <option name=\"commitMessagesMapping\">\n      <RewordedCommitMessageMapping>\n        <option name=\"originalMessage\" value=\"commit001\" />\n        <option name=\"rewordedMessage\" value=\"commit001\" />\n      </RewordedCommitMessageMapping>\n    </option>\n    <option name=\"currentCommit\" value=\"1\" />\n    <option name=\"onto\" value=\"1dfd251184469d8192b9346d06cd2903226795d5\" />\n  </component>\n  <component name=\"GithubPullRequestsUISettings\">{\n  &quot;selectedUrlAndAccountId&quot;: {\n    &quot;url&quot;: &quot;git@github.com:paroman-alt/myFirstRep.git&quot;,\n    &quot;accountId&quot;: &quot;e709319c-e621-4ee7-9166-2b74007b5d11&quot;\n  }\n}</component>\n  <component name=\"HighlightingSettingsPerFile\">\n    <setting file=\"file://$PROJECT_DIR$/hook001.py\" root0=\"SKIP_INSPECTION\" />\n  </component>\n  <component name=\"ProblemsViewState\">\n    <option name=\"selectedTabId\" value=\"QODANA_PROBLEMS_VIEW_TAB\" />\n  </component>\n  <component name=\"ProjectColorInfo\">{\n  &quot;associatedIndex&quot;: 4\n}</component>\n  <component name=\"ProjectId\" id=\"2rsvhQoLK713ERsTOnic5BlOC23\" />\n  <component name=\"ProjectViewState\">\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\n    <option name=\"showLibraryContents\" value=\"true\" />\n  </component>\n  <component name=\"PropertiesComponent\"><![CDATA[{\n  \"keyToString\": {\n    \"ASKED_SHARE_PROJECT_CONFIGURATION_FILES\": \"true\",\n    \"Python.ex1.1.executor\": \"Run\",\n    \"Python.from_book_headfirst_ex1.executor\": \"Run\",\n    \"Python.hook001.executor\": \"Run\",\n    \"Python.hw.executor\": \"Run\",\n    \"RunOnceActivity.ShowReadmeOnStart\": \"true\",\n    \"RunOnceActivity.git.unshallow\": \"true\",\n    \"SHARE_PROJECT_CONFIGURATION_FILES\": \"true\",\n    \"last_opened_file_path\": \"/home/roman/git/myFirstRep\",\n    \"settings.editor.selected.configurable\": \"settings.qodana\"\n  },\n  \"keyToStringList\": {\n    \"ChangesTree.GroupingKeys\": [\n      \"directory\"\n    ]\n  }\n}]]></component>\n  <component name=\"SharedIndexes\">\n    <attachedChunks>\n      <set>\n        <option value=\"bundled-python-sdk-1b1018131e27-aa17d162503b-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-243.22562.180\" />\n      </set>\n    </attachedChunks>\n  </component>\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\n  <component name=\"TaskManager\">\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\n      <changelist id=\"012edf08-f318-4b8f-bb32-96dc2d9e7c54\" name=\"Changes\" comment=\"\" />\n      <created>1737360717291</created>\n      <option name=\"number\" value=\"Default\" />\n      <option name=\"presentableId\" value=\"Default\" />\n      <updated>1737360717291</updated>\n    </task>\n    <task id=\"LOCAL-00001\" summary=\"task-5051\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1737367599754</created>\n      <option name=\"number\" value=\"00001\" />\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1737367599754</updated>\n    </task>\n    <task id=\"LOCAL-00002\" summary=\"TASK-123 Added first PR&#10;&#10;(cherry picked from commit e8cdb53d491bc88156ede8d7b7837b49112d8cbc)\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1737881349591</created>\n      <option name=\"number\" value=\"00002\" />\n      <option name=\"presentableId\" value=\"LOCAL-00002\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1737881349591</updated>\n    </task>\n    <task id=\"LOCAL-00003\" summary=\"squash! task-5051\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1737881587359</created>\n      <option name=\"number\" value=\"00003\" />\n      <option name=\"presentableId\" value=\"LOCAL-00003\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1737881587359</updated>\n    </task>\n    <task id=\"LOCAL-00004\" summary=\"squash! task-5051\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1737881650866</created>\n      <option name=\"number\" value=\"00004\" />\n      <option name=\"presentableId\" value=\"LOCAL-00004\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1737881650866</updated>\n    </task>\n    <task id=\"LOCAL-00005\" summary=\"task-5051 323\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1738048430569</created>\n      <option name=\"number\" value=\"00005\" />\n      <option name=\"presentableId\" value=\"LOCAL-00005\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1738048430569</updated>\n    </task>\n    <task id=\"LOCAL-00006\" summary=\"addNewFile\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1738049720759</created>\n      <option name=\"number\" value=\"00006\" />\n      <option name=\"presentableId\" value=\"LOCAL-00006\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1738049720759</updated>\n    </task>\n    <task id=\"LOCAL-00007\" summary=\"addNewFile\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1738297294662</created>\n      <option name=\"number\" value=\"00007\" />\n      <option name=\"presentableId\" value=\"LOCAL-00007\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1738297294662</updated>\n    </task>\n    <task id=\"LOCAL-00008\" summary=\"commit0011\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1738492724372</created>\n      <option name=\"number\" value=\"00008\" />\n      <option name=\"presentableId\" value=\"LOCAL-00008\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1738492724372</updated>\n    </task>\n    <task id=\"LOCAL-00009\" summary=\"commit0011\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1738492778320</created>\n      <option name=\"number\" value=\"00009\" />\n      <option name=\"presentableId\" value=\"LOCAL-00009\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1738492778320</updated>\n    </task>\n    <servers />\n  </component>\n  <component name=\"Vcs.Log.Tabs.Properties\">\n    <option name=\"OPEN_GENERIC_TABS\">\n      <map>\n        <entry key=\"3699c1e7-a3be-4c40-b22e-e0d2a4b49417\" value=\"TOOL_WINDOW\" />\n        <entry key=\"55f14710-ab18-4ec6-89ac-762082dd2d9e\" value=\"TOOL_WINDOW\" />\n      </map>\n    </option>\n    <option name=\"RECENT_FILTERS\">\n      <map>\n        <entry key=\"Branch\">\n          <value>\n            <list>\n              <RecentGroup>\n                <option name=\"FILTER_VALUES\">\n                  <option value=\"HEAD\" />\n                </option>\n              </RecentGroup>\n              <RecentGroup>\n                <option name=\"FILTER_VALUES\">\n                  <option value=\"main\" />\n                </option>\n              </RecentGroup>\n            </list>\n          </value>\n        </entry>\n      </map>\n    </option>\n    <option name=\"TAB_STATES\">\n      <map>\n        <entry key=\"3699c1e7-a3be-4c40-b22e-e0d2a4b49417\">\n          <value>\n            <State>\n              <option name=\"CUSTOM_BOOLEAN_PROPERTIES\">\n                <map>\n                  <entry key=\"Show.Git.Branches\" value=\"true\" />\n                </map>\n              </option>\n              <option name=\"FILTERS\">\n                <map>\n                  <entry key=\"roots\">\n                    <value>\n                      <list>\n                        <option value=\"$PROJECT_DIR$\" />\n                      </list>\n                    </value>\n                  </entry>\n                </map>\n              </option>\n            </State>\n          </value>\n        </entry>\n        <entry key=\"55f14710-ab18-4ec6-89ac-762082dd2d9e\">\n          <value>\n            <State />\n          </value>\n        </entry>\n        <entry key=\"MAIN\">\n          <value>\n            <State />\n          </value>\n        </entry>\n      </map>\n    </option>\n  </component>\n  <component name=\"VcsManagerConfiguration\">\n    <MESSAGE value=\"TASK-123 Added first PR&#10;&#10;(cherry picked from commit e8cdb53d491bc88156ede8d7b7837b49112d8cbc)\" />\n    <MESSAGE value=\"squash! task-5051\" />\n    <MESSAGE value=\"task-5051\" />\n    <MESSAGE value=\"task-5051 323\" />\n    <MESSAGE value=\"addNewFile\" />\n    <MESSAGE value=\"squashed commits\" />\n    <MESSAGE value=\"rr\" />\n    <MESSAGE value=\"TASK-123 Added first PR0001\" />\n    <MESSAGE value=\"commit0011\" />\n  </component>\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision 4c3bc10de1107abed89d49fd308e449de3adc276)
++++ b/.idea/workspace.xml	(date 1738577300807)
+@@ -4,6 +4,7 @@
+     <option name="autoReloadType" value="SELECTIVE" />
+   </component>
+   <component name="ChangeListManager">
++    <list default="true" id="2d7c42e5-dc24-441e-a1fb-f993341b5e21" name="Changes" comment="homework-1" />
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+@@ -27,6 +28,7 @@
+     </option>
+     <option name="RECENT_BRANCH_BY_REPOSITORY">
+       <map>
++        <entry key="$PROJECT_DIR$" value="main" />
+       </map>
+     </option>
+     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+@@ -70,7 +72,7 @@
+     <option name="commitMessagesMapping">
+       <RewordedCommitMessageMapping>
+         <option name="originalMessage" value="commit001" />
+-        <option name="rewordedMessage" value="commit001" />
++        <option name="rewordedMessage" value="move all in main" />
+       </RewordedCommitMessageMapping>
+     </option>
+     <option name="currentCommit" value="1" />
+@@ -86,7 +88,7 @@
+     <setting file="file://$PROJECT_DIR$/hook001.py" root0="SKIP_INSPECTION" />
+   </component>
+   <component name="ProblemsViewState">
+-    <option name="selectedTabId" value="QODANA_PROBLEMS_VIEW_TAB" />
++    <option name="selectedTabId" value="CurrentFile" />
+   </component>
+   <component name="ProjectColorInfo">{
+   &quot;associatedIndex&quot;: 4
+@@ -96,25 +98,30 @@
+     <option name="hideEmptyMiddlePackages" value="true" />
+     <option name="showLibraryContents" value="true" />
+   </component>
+-  <component name="PropertiesComponent"><![CDATA[{
+-  "keyToString": {
+-    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+-    "Python.ex1.1.executor": "Run",
+-    "Python.from_book_headfirst_ex1.executor": "Run",
+-    "Python.hook001.executor": "Run",
+-    "Python.hw.executor": "Run",
+-    "RunOnceActivity.ShowReadmeOnStart": "true",
+-    "RunOnceActivity.git.unshallow": "true",
+-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+-    "last_opened_file_path": "/home/roman/git/myFirstRep",
+-    "settings.editor.selected.configurable": "settings.qodana"
++  <component name="PropertiesComponent">{
++  &quot;keyToString&quot;: {
++    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
++    &quot;Python.ex001.executor&quot;: &quot;Run&quot;,
++    &quot;Python.ex1.1.executor&quot;: &quot;Run&quot;,
++    &quot;Python.from_book_headfirst_ex1.executor&quot;: &quot;Run&quot;,
++    &quot;Python.homework001.executor&quot;: &quot;Run&quot;,
++    &quot;Python.hook001.executor&quot;: &quot;Run&quot;,
++    &quot;Python.hw.executor&quot;: &quot;Run&quot;,
++    &quot;Python.task1.1.executor&quot;: &quot;Run&quot;,
++    &quot;Python.test_something.executor&quot;: &quot;Run&quot;,
++    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
++    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
++    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
++    &quot;git-widget-placeholder&quot;: &quot;work-1&quot;,
++    &quot;last_opened_file_path&quot;: &quot;/home/roman/git/myFirstRep&quot;,
++    &quot;settings.editor.selected.configurable&quot;: &quot;settings.qodana&quot;
+   },
+-  "keyToStringList": {
+-    "ChangesTree.GroupingKeys": [
+-      "directory"
++  &quot;keyToStringList&quot;: {
++    &quot;ChangesTree.GroupingKeys&quot;: [
++      &quot;directory&quot;
+     ]
+   }
+-}]]></component>
++}</component>
+   <component name="SharedIndexes">
+     <attachedChunks>
+       <set>
+@@ -125,19 +132,19 @@
+   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+   <component name="TaskManager">
+     <task active="true" id="Default" summary="Default task">
+-      <changelist id="012edf08-f318-4b8f-bb32-96dc2d9e7c54" name="Changes" comment="" />
++      <changelist id="2d7c42e5-dc24-441e-a1fb-f993341b5e21" name="Changes" comment="cc" />
+       <created>1737360717291</created>
+       <option name="number" value="Default" />
+       <option name="presentableId" value="Default" />
+       <updated>1737360717291</updated>
+     </task>
+-    <task id="LOCAL-00001" summary="task-5051">
++    <task id="LOCAL-00001" summary="homework-1">
+       <option name="closed" value="true" />
+-      <created>1737367599754</created>
++      <created>1738576837591</created>
+       <option name="number" value="00001" />
+       <option name="presentableId" value="LOCAL-00001" />
+       <option name="project" value="LOCAL" />
+-      <updated>1737367599754</updated>
++      <updated>1738576837591</updated>
+     </task>
+     <task id="LOCAL-00002" summary="TASK-123 Added first PR&#10;&#10;(cherry picked from commit e8cdb53d491bc88156ede8d7b7837b49112d8cbc)">
+       <option name="closed" value="true" />
+@@ -203,6 +210,7 @@
+       <option name="project" value="LOCAL" />
+       <updated>1738492778320</updated>
+     </task>
++    <option name="localTasksCounter" value="2" />
+     <servers />
+   </component>
+   <component name="Vcs.Log.Tabs.Properties">
+@@ -279,5 +287,9 @@
+     <MESSAGE value="rr" />
+     <MESSAGE value="TASK-123 Added first PR0001" />
+     <MESSAGE value="commit0011" />
++    <MESSAGE value="cc" />
++    <MESSAGE value="move all in main" />
++    <MESSAGE value="homework-1" />
++    <option name="LAST_COMMIT_MESSAGE" value="homework-1" />
+   </component>
+ </project>
+\ No newline at end of file
+Index: test_something.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/test_something.py b/test_something.py
+new file mode 100644
+--- /dev/null	(date 1738577300807)
++++ b/test_something.py	(date 1738577300807)
+@@ -0,0 +1,49 @@
++# найти количество четных цифр в числе
++# пробую добавить рекурсию
++res = 0
++def digit_counter_recursion(number):
++    global res
++    if number // 10 == 0:
++        return res
++    res += 1
++    return digit_counter_recursion(number // 10)
++
++#print(digit_counter_recursion(9933))
++#print(digit_counter_recursion(9933))
++
++
++# написать алгоритм разворачивающий число (было "123" стало "321")
++# за два цикла
++def reverse_number(number):
++    list_of_digits = list()
++    i = int()
++    result = int()
++    while number != 0:
++        last_digit = number % 10
++        number = number // 10
++        list_of_digits.append(last_digit)
++        i += 1
++    for digit in list_of_digits:
++        i -= 1
++        result += digit * 10**i
++    return result
++
++#print(reverse_number(98666076))
++
++# попробовать поменять две переменных местами
++a = 223
++b = 564
++c = a
++a = b
++b = c
++#print(a,b)
++a = 111
++b = 222
++a = a + b
++b = a - b
++a = a - b
++#print(a, b)
++a = 10
++b = 20
++a, b = b, a
++#print(a, b)
+\ No newline at end of file
+Index: homework001.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/homework001.py b/homework001.py
+new file mode 100644
+--- /dev/null	(date 1738578450817)
++++ b/homework001.py	(date 1738578450817)
+@@ -0,0 +1,90 @@
++# найти количество цифр в числе (задача которую обсуждали на созвоне)
++# мой вариант решения
++def digit_counter_my_version(number):
++    i = 0
++    ans = 1
++    while ans >= 1:
++        i += 1
++        ans = number // 10**i
++    return i
++
++# найти количество цифр в числе
++# (алгоритм который проговорили на занятии)
++# не работает при number = 0 (нужен цикл с пост-условием?)
++def digit_counter(number):
++    res = 0
++    while number != 0:
++        number = number // 10
++        res += 1
++    return res
++
++# найти количество четных цифр в числе
++def even_digit_counter(number):
++    res = 0
++    while number != 0:
++        digit = number % 10
++        if digit % 2 == 0:
++            res += 1
++        number = number // 10
++    return res
++
++# найти количество цифр которые делятся на 3 и не делятся на 2
++def odd_multiple_three(number):
++    res = 0
++    while number != 0:
++        digit = number % 10
++        if digit % 2 != 0 and digit % 3 == 0:
++            res += 1
++        number = number // 10
++    return res
++
++# написать алгоритм разворачивающий число (было "123" стало "321")
++# за два цикла
++def reverse_number(number):
++    list_of_digits = list()
++    i = int()
++    result = int()
++    while number != 0:
++        last_digit = number % 10
++        number = number // 10
++        list_of_digits.append(last_digit)
++        i += 1
++    for digit in list_of_digits:
++        i -= 1
++        result += digit * 10**i
++    return result
++
++# найти максимальную и минимальную цифры в числе
++def max_min_digits(number):
++    max = int()
++    min = number % 10
++    while number != 0:
++        digit = number % 10
++        if digit > max:
++            max = digit
++        if digit < min:
++            min = digit
++        number //= 10
++    return max, min
++
++# напиши функцию которая выводит все простые числа от 0 до 10000
++def prime_numbers_10k():
++    prime_list = [1, 2]
++    for number in range(3, 10001):
++        was_break = False
++        for sub in range(2, number):
++            if number % sub == 0:
++                was_break = True
++                break
++        if not was_break:
++            prime_list.append(number)
++    return prime_list
++
++
++#print(digit_counter_my_version(0))
++#print(digit_counter(0))
++#print(even_digit_counter(4343))
++#print(odd_multiple_three(39390))
++print(reverse_number(7890002))
++#print(max_min_digits(890))
++#print(prime_numbers_10k())
+\ No newline at end of file
+Index: .idea/shelf/Uncommitted_changes_before_rebase__Changes_1.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><changelist name=\"Uncommitted_changes_before_rebase_[Changes]1\" date=\"1738386667711\" recycled=\"true\" deleted=\"true\">\n  <option name=\"PATH\" value=\"$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]1/shelved.patch\" />\n  <option name=\"DESCRIPTION\" value=\"Uncommitted changes before rebase [Changes]\" />\n</changelist>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/shelf/Uncommitted_changes_before_rebase__Changes_1.xml b/.idea/shelf/Uncommitted_changes_before_rebase__Changes_1.xml
+--- a/.idea/shelf/Uncommitted_changes_before_rebase__Changes_1.xml	(revision 4c3bc10de1107abed89d49fd308e449de3adc276)
++++ b/.idea/shelf/Uncommitted_changes_before_rebase__Changes_1.xml	(date 1738577299920)
+@@ -1,4 +1,4 @@
+-<changelist name="Uncommitted_changes_before_rebase_[Changes]1" date="1738386667711" recycled="true" deleted="true">
++<changelist name="Uncommitted_changes_before_rebase_[Changes]1" date="1738498553112" recycled="false" toDelete="true">
+   <option name="PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]1/shelved.patch" />
+   <option name="DESCRIPTION" value="Uncommitted changes before rebase [Changes]" />
+ </changelist>
+\ No newline at end of file
