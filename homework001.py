@@ -9,7 +9,7 @@
 # [2000] -> 4
 # [20007] -> 5
 # [120003219313] -> 12
-def getDigitsCount_v1(number):
+def get_digits_count_v1(number):
     i = 0
     ans = -1
     while ans != 0:
@@ -31,7 +31,7 @@ def getDigitsCount_v1(number):
 # [2000] -> 4
 # [20007] -> 5
 # [120003219313] -> 12
-def getDigitsCount_v2(number):
+def get_digits_count_v2(number):
     res = 0
     while number != 0:
         number = number // 10
@@ -52,7 +52,7 @@ def getDigitsCount_v2(number):
 # [888] -> 3
 # [1000] -> 3
 # [10001] -> 3
-def getEvenDigitsCount(number):
+def get_even_digits_count(number):
     res = 0
     while number != 0:
         digit = number % 10
@@ -74,16 +74,16 @@ def getEvenDigitsCount(number):
 # [1000] -> 0
 # [3000] -> 1
 # [50009] -> 1
-def getOddMultipleThree(number):
+foo = lambda n: n % 2 != 0 and n % 3 == 0
+def count_odd_multiple_three(number):
     res = 0
     while number != 0:
         digit = number % 10
-        if digit % 2 != 0 and digit % 3 == 0:
+        if foo(digit):
             res += 1
         number = number // 10
     return res
-#print(getOddMultipleThree(32424169))
-
+# print(count_odd_multiple_three(32424169))
 
 # написать алгоритм разворачивающий число (было "123" стало "321")
 # написал за два цикла (можно ли за 1?)
@@ -110,17 +110,14 @@ def reverse_number(number):
 
 # алгоритм разворачивающий число (было "123" стало "321")
 # но без использования вспомогательных структур данных
-def getReverseNumber(number):
-    i = 0
+def get_reverse_number(number):
     result = 0
-    digits = getDigitsCount_v1(number)
-    while digits != 0:
-        i += 1
-        digits -= 1
-        current_digit = number % 10**i // 10**(i-1)
-        result += current_digit * 10**digits
+    while number != 0:
+        result = result * 10 + number % 10
+        number //= 10
     return result
-#print(getReverseNumber(11123130009))
+
+print(get_reverse_number(11123130009))
 
 
 # найти максимальную цифру в числе
@@ -131,7 +128,7 @@ def getReverseNumber(number):
 # [999] -> (9, 9)
 # [3000] -> (3, 0)
 # [30001] -> (3, 0)
-def getMaxDigit(number):
+def get_max_digit(number):
     max = number % 10
     while number != 0:
         digit = number % 10
@@ -141,7 +138,7 @@ def getMaxDigit(number):
     return max
 
 # найти минимальную цифру в числе
-def getMinDigit(number):
+def get_min_digit(number):
     min = number % 10
     while number != 0:
         digit = number % 10
@@ -154,7 +151,7 @@ def getMinDigit(number):
 
 # напиши функцию которая выводит все простые числа от 0 до 10000
 # не уверен что использование среза (slice) - удачное решение
-def getPrimeNumbers10k_v1():
+def get_prime_numbers_10k_v1():
     prime_list = [1, 2]
     counter = 0 # для проверки количества заходов в цикл
     for number in range(3, 10001):
@@ -166,10 +163,10 @@ def getPrimeNumbers10k_v1():
             prime_list.append(number)
     # print(counter)
     return prime_list
-getPrimeNumbers10k_v1()
+get_prime_numbers_10k_v1()
 
 # вывод всех простых чисел от 0 до 10000 по алгоритму Эратосфена
-def getPrimeNumbers10k_v2():
+def get_prime_numbers_10k_v2():
     last_number = 10000
     list_of_numbers = list(i for i in range(2, last_number+1))
     i = 1 # счетчик внешнего цикла
@@ -190,4 +187,4 @@ def getPrimeNumbers10k_v2():
     # print(counter)
     return list_of_numbers
 # print(len(getPrimeNumbers10k_v2()))
-print(getPrimeNumbers10k_v2())
+print(get_prime_numbers_10k_v2())
