@@ -11,41 +11,44 @@
 # ___________
 # Результат: 130
 
-from logging import exception
-from curses.ascii import isdigit
-from operator import truediv
 
 symbols = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9',
            'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J',
            'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T',
            'U', 'V', 'W', 'X', 'Y', 'Z']
 
+# функция добавляет нули в начало меньшей из двух строк для уравнивания их по длине
+def add_nulls_for_equality(str1, str2):
+    str1, str2 = str(str1), str(str2)
+    len_dif = max(len(str1), len(str2)) - min(len(str1), len(str2))  # разница в длине строк
+    nulls = '0' * len_dif # строка из нулей необходимой длины
+    if len(str1) > len(str2):
+        str2 = nulls + str2
+    else:
+        str1 = nulls + str1
+    return str1, str2
+# еще нашел метод zfill который нулями строку дополняет
+# string.zfill('1', 4) ----> '0001'
+
 def calc_addition(num1, num2, num_sys):
-    result = str()
+    result = []
     remaind = 0 # учет единицы в старшем разряде
-    num1_reversed = str(num1)[::-1]
-    num2_reversed = str(num2)[::-1]
-    for i in range(0, max(len(str(num1)), len(str(num2)))):
-        try:  # для случая когда числа разной длины и для уравнивания требуется добавить нули в меньшее
-            num1_symbol = num1_reversed[i]
-        except IndexError:
-            num1_symbol = '0'
-        try:
-            num2_symbol = num2_reversed[i]
-        except IndexError:
-            num2_symbol = '0'
-        index_of_sum_symbol = symbols.index(num1_symbol) + symbols.index(num2_symbol) + remaind
+    max_len_num = max(len(str(num1)), len(str(num2)))
+    num1, num2 = add_nulls_for_equality(num1, num2)
+    for i in range(max_len_num-1, -1, -1):
+        index_of_sum_symbol = symbols.index(num1[i]) + symbols.index(num2[i]) + remaind
         remaind = index_of_sum_symbol // num_sys
         sum_symbol = symbols[index_of_sum_symbol % num_sys]
-        result = sum_symbol + result
+        result.append(sum_symbol)
     if remaind != 0:  # для случая когда единица остается после завершения цикла (например 999 + 1)
-        result = str(remaind) + result
+        result.append(str(remaind))
+    result = ''.join(reversed(result))
     return result
 
 # валидация ввода:
     # 1 - числа должны соответствовать заданной СС
-    # 2 - для num001 и num002 допустим только ввод символов из списка symbols
-    # 3 - для num_cap только int числа и от 2 до 36
+    # 2 - для num1 и num2 допустим только ввод символов из списка symbols
+    # 3 - для num_sys только int числа и от 2 до 36
     # 4 - для operation только "+", "-", "/", "*"
 def calc_validation(num_sys, num = None, operation = None): # возвращает true если валидно и false если невалидно
     if type(num_sys) is not int or num_sys > 36 or num_sys < 2: # Основание СС должно быть целым числом от 2 до 36
@@ -58,6 +61,6 @@ def calc_validation(num_sys, num = None, operation = None): # возвращае
         return False
     return True
 
-
-# print(calc_addition('8', '1', 9))
+# print(add_nulls_for_equality('232ee1', '3213'))
+print(calc_addition('8', '1', 9))
 # print(calc_validation(5, 8))
