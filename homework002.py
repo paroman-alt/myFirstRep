@@ -10,85 +10,76 @@
 # Введите второе число: 7
 # ___________
 # Результат: 130
+from operator import index
+
+symbols = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9',
+           'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J',
+           'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T',
+           'U', 'V', 'W', 'X', 'Y', 'Z']
 
 
-# идея 1 - переводить в 10ичную СС, выполнять операцию и переводить результат обратно в заданную СС
-# (просто и неинтересно)
-
-# идея 2 - реализовать алгоритм как считал бы вручную, складывая в столбик (как в школе)
-
-
-from logging import exception
-from curses.ascii import isdigit
-
-class MyException(Exception):
-    pass
-
-def getCalcNumSys(num001, num002, num_cap, operation = '+'):
-    symbols = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9',
-               'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J',
-               'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T',
-               'U', 'V', 'W', 'X', 'Y', 'Z']
-    result = str()
-
-    # валидация ввода:
-    # 1 - числа должны соответствовать заданной СС
-    # 2 - для num001 и num002 допустим только ввод символов из списка symbols
-    # 3 - для num_cap только int числа и от 2 до 36
-    # 4 - для operation только '+'
-    if type(num_cap) is not int or num_cap > 36 or num_cap < 2:
-        print('аргумент num_cap функции getCalcNumSys должен быть целым числом от 2 до 36')
-        raise MyException(Exception)
-    for digit in str(num001) + str(num002):
-        if digit not in symbols[0: num_cap]:
-            print('аргументы num001 и num002 функции getCalcNumSys должны состоять только из символов от 0-9 A-V '
-                  'и не должны выходить за рамки заданной СС')
-            raise MyException(Exception)
-    if operation not in ['+']:
-        print('аргумент operation функции getCalcNumSys должен быть одним из символов: "+"')
-        raise MyException(Exception)
-
-    match operation:
-        case '+':
-            remaind = 0 # учет единицы в старшем разряде
-            for i in range(0, max(len(str(num001)), len(str(num002)))):
-                try: # для случая когда числа разной длины и для уравнивания требуется добавить нули в меньшее
-                    num001_digit = str(num001)[::-1][i]
-                except IndexError:
-                    num001_digit = '0'
-                try:
-                    num002_digit = str(num002)[::-1][i]
-                except IndexError:
-                    num002_digit = '0'
-                indx = symbols.index(num001_digit) + symbols.index(num002_digit) + remaind
-                if indx >= num_cap:
-                    remaind = 1
-                    indx = indx % len(symbols) # на случай если индекс суммарного символа выходит за список
-                    sum_digits = symbols[indx % num_cap] # остаток, если суммарный символ больше разрядности СС
-                else:
-                    remaind = 0
-                    sum_digits = symbols[indx]
-                result = sum_digits + result
-            if remaind != 0: # для случая когда единица остается после завершения цикла (например 999 + 1)
-                result = str(remaind) + result
-            return result
-
-# как тестировал:
-# getCalcNumSys(111, '32D', 16)   -------> 43E
-# getCalcNumSys('0', '0', 2)      -------> 0
-# getCalcNumSys(22, 33, 10)       -------> 55
-# getCalcNumSys('999', '1', 10)   -------> 1000
-# getCalcNumSys('999', '1', 12)   -------> 99A
-# getCalcNumSys('AAA', 'BBB', 16) -------> 1665
-# etCalcNumSys('AVA', 'BVB', 36)  -------> MQL
-# getCalcNumSys('Z', '1', 36)     -------> 10
-# getCalcNumSys('Z', 'Z', 36)     -------> 1Y
-# getCalcNumSys('Z', -1, 36)      -------> ошибка (предусмотренная)
-# getCalcNumSys('Z', 'Z', 36, 'plus') ---> ошибка
-# getCalcNumSys('Z', 'Z', 37)     -------> ошибка
-# getCalcNumSys('Z', 'Z', '36')   -------> ошибка
-# getCalcNumSys('999', '1', 2)    -------> ошибка
-# getCalcNumSys('9+=?9', '13', 10) ------> ошибка
+# функция добавляет нули в начало меньшей из двух строк для уравнивания их по длине
+def add_nulls_for_equality(str1, str2):
+    str1, str2 = str(str1), str(str2)
+    len_dif = max(len(str1), len(str2)) - min(len(str1), len(str2))  # разница в длине строк
+    nulls = '0' * len_dif # строка из нулей необходимой длины
+    if len(str1) > len(str2):
+        str2 = nulls + str2
+    else:
+        str1 = nulls + str1
+    return str1, str2
+# еще нашел метод zfill который нулями строку дополняет
+# string.zfill('1', 4) ----> '0001'
 
 
-print(getCalcNumSys('A', '-1', 16))
+# функция стирает из начала строки нули если они есть
+def null_remover(str1):
+    i = 0
+    while str1[i] == '0':
+        i += 1
+    return str1[i:]
+
+
+# функция начиная с заданной позиции справа налево уменьшает символы на 1 (в соответствии с СС)
+# но только пока не выполнит условие для символа отличного от нуля
+# функция возвращает измененную строку (ее длина остается прежней)
+def get_post_borrow_value(num1, num_sys, entry):
+    num1_symb_mass = [i for i in num1]
+    for i in range(len(num1_symb_mass[:entry])-1, -1, -1):
+        new_symb_index = (symbols.index(num1_symb_mass[i]) - 1) % num_sys
+        num1_symb_mass[i] = symbols[new_symb_index]
+        if num1_symb_mass[i] != symbols[num_sys-1]: # если это условие соблюдается, то символ не был "0"
+            return ''.join(num1_symb_mass)
+# print(get_post_borrow_value('1008000', 10, 4)) # -----> 0998000
+
+
+# функция сравнивает два числа в заданной СС и возвращает большее
+def get_greater_num(num1, num2, num_sys):
+    num1_dec = int(num1, num_sys) # перевод числа из заданной сс (в строковом типе) в десятичную (в int)
+    num2_dec = int(num2, num_sys)
+    if num2_dec > num1_dec:
+        return num2
+    else:
+        return num1
+
+
+def calc_subtraction(num1, num2, num_sys):
+    # не уверен, что такое использование рекурсии допустимо
+    if get_greater_num(num1, num2, num_sys) == num2:
+        return '-' + calc_subtraction(num2, num1, num_sys)
+    result = []
+    max_len_num = max(len(str(num1)), len(str(num2)))
+    num1, num2 = add_nulls_for_equality(num1, num2)
+    for i in range(max_len_num-1, -1, -1):
+        res_symbol_index = symbols.index(num1[i]) - symbols.index(num2[i])
+        res_symbol = symbols[:num_sys][res_symbol_index]
+        result.append(res_symbol)
+        if symbols.index(num1[i]) < symbols.index(num2[i]): # случай когда приходится "занимать" единицу из старших разрядов
+            num1 = get_post_borrow_value(num1, num_sys, i)
+    result = ''.join(reversed(result))
+    return null_remover(result)
+
+
+# print(add_nulls_for_equality('232ee1', '3213'))
+# print(calc_subtraction('99009', '1018', 11))
+# print(calc_validation(5, 8))

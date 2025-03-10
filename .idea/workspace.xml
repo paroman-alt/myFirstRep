@@ -4,14 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2d7c42e5-dc24-441e-a1fb-f993341b5e21" name="Changes" comment="cc">
-      <change afterPath="$PROJECT_DIR$/homework001.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_something.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase__Changes_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase__Changes_1.xml" afterDir="false" />
+    <list default="true" id="2d7c42e5-dc24-441e-a1fb-f993341b5e21" name="Changes" comment="homework-2-subtraction &#10;реализована функция деления, а также сопутствующие функции">
+      <change afterPath="$PROJECT_DIR$/homework002_main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/homework002_tests.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hw.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task1.1.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task1.2.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,7 +32,7 @@
     </option>
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="main" />
+        <entry key="$PROJECT_DIR$" value="feature/homework-2" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -51,31 +47,31 @@
   ],
   &quot;lastFilter&quot;: {}
 }</component>
-  <component name="GitHubPullRequestState">{
-  &quot;prStates&quot;: [
+  <component name="GitHubPullRequestState"><![CDATA[{
+  "prStates": [
     {
-      &quot;id&quot;: {
-        &quot;id&quot;: &quot;PR_kwDONronmc6IO676&quot;,
-        &quot;number&quot;: 1
+      "id": {
+        "id": "PR_kwDONronmc6IO676",
+        "number": 1
       },
-      &quot;lastSeen&quot;: 1737364886889
+      "lastSeen": 1737364886889
     },
     {
-      &quot;id&quot;: {
-        &quot;id&quot;: &quot;PR_kwDONronmc6I59cS&quot;,
-        &quot;number&quot;: 3
+      "id": {
+        "id": "PR_kwDONronmc6IO-Jf",
+        "number": 2
       },
-      &quot;lastSeen&quot;: 1738050713162
+      "lastSeen": 1738050725232
     },
     {
-      &quot;id&quot;: {
-        &quot;id&quot;: &quot;PR_kwDONronmc6IO-Jf&quot;,
-        &quot;number&quot;: 2
+      "id": {
+        "id": "PR_kwDONronmc6J01Ik",
+        "number": 5
       },
-      &quot;lastSeen&quot;: 1738050725232
+      "lastSeen": 1738904825050
     }
   ]
-}</component>
+}]]></component>
   <component name="GitRewordedCommitMessages">
     <option name="commitMessagesMapping">
       <RewordedCommitMessageMapping>
@@ -106,30 +102,35 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;Python.ex001.executor&quot;: &quot;Run&quot;,
-    &quot;Python.ex1.1.executor&quot;: &quot;Run&quot;,
-    &quot;Python.from_book_headfirst_ex1.executor&quot;: &quot;Run&quot;,
-    &quot;Python.homework001.executor&quot;: &quot;Run&quot;,
-    &quot;Python.hook001.executor&quot;: &quot;Run&quot;,
-    &quot;Python.hw.executor&quot;: &quot;Run&quot;,
-    &quot;Python.task1.1.executor&quot;: &quot;Run&quot;,
-    &quot;Python.test_something.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;work-1&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/roman/git/myFirstRep&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;settings.qodana&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Python.daawd.executor": "Run",
+    "Python.ex001.executor": "Run",
+    "Python.ex1.1.executor": "Run",
+    "Python.from_book_headfirst_ex1.executor": "Run",
+    "Python.fsfessf.executor": "Run",
+    "Python.homework001.executor": "Run",
+    "Python.homework002.executor": "Run",
+    "Python.homework002_main.executor": "Run",
+    "Python.hook001.executor": "Run",
+    "Python.hw.executor": "Run",
+    "Python.task1.1.executor": "Run",
+    "Python.test_something.executor": "Run",
+    "Python.wwww.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "feature/homework-2-subtraction",
+    "last_opened_file_path": "/home/roman/git/myFirstRep",
+    "settings.editor.selected.configurable": "settings.qodana"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;ChangesTree.GroupingKeys&quot;: [
-      &quot;directory&quot;
+  "keyToStringList": {
+    "ChangesTree.GroupingKeys": [
+      "directory"
     ]
   }
-}</component>
+}]]></component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -146,45 +147,45 @@
       <option name="presentableId" value="Default" />
       <updated>1737360717291</updated>
     </task>
-    <task id="LOCAL-00001" summary="task-5051">
+    <task id="LOCAL-00001" summary="fixes-1&#10;исправил все замечания кроме замечания для функции нахождения цифр кратных трем и не кратных двум">
       <option name="closed" value="true" />
-      <created>1737367599754</created>
+      <created>1739160986891</created>
       <option name="number" value="00001" />
       <option name="presentableId" value="LOCAL-00001" />
       <option name="project" value="LOCAL" />
-      <updated>1737367599754</updated>
+      <updated>1739160986891</updated>
     </task>
-    <task id="LOCAL-00002" summary="TASK-123 Added first PR&#10;&#10;(cherry picked from commit e8cdb53d491bc88156ede8d7b7837b49112d8cbc)">
+    <task id="LOCAL-00002" summary="homework-2&#10;калькулятор в различных СС (только операция &quot;+&quot;)">
       <option name="closed" value="true" />
-      <created>1737881349591</created>
+      <created>1740279544046</created>
       <option name="number" value="00002" />
       <option name="presentableId" value="LOCAL-00002" />
       <option name="project" value="LOCAL" />
-      <updated>1737881349591</updated>
+      <updated>1740279544046</updated>
     </task>
-    <task id="LOCAL-00003" summary="squash! task-5051">
+    <task id="LOCAL-00003" summary="homework-2-addition исправил большую часть замечаний из комментариев к ПР">
       <option name="closed" value="true" />
-      <created>1737881587359</created>
+      <created>1741358230373</created>
       <option name="number" value="00003" />
       <option name="presentableId" value="LOCAL-00003" />
       <option name="project" value="LOCAL" />
-      <updated>1737881587359</updated>
+      <updated>1741358230373</updated>
     </task>
-    <task id="LOCAL-00004" summary="squash! task-5051">
+    <task id="LOCAL-00004" summary="homework-2-addition &#10;исправлены все замечания">
       <option name="closed" value="true" />
-      <created>1737881650866</created>
+      <created>1741445184171</created>
       <option name="number" value="00004" />
       <option name="presentableId" value="LOCAL-00004" />
       <option name="project" value="LOCAL" />
-      <updated>1737881650866</updated>
+      <updated>1741445184171</updated>
     </task>
-    <task id="LOCAL-00005" summary="task-5051 323">
+    <task id="LOCAL-00005" summary="homework-2-subtraction &#10;реализована функция деления, а также сопутствующие функции">
       <option name="closed" value="true" />
-      <created>1738048430569</created>
+      <created>1741619910808</created>
       <option name="number" value="00005" />
       <option name="presentableId" value="LOCAL-00005" />
       <option name="project" value="LOCAL" />
-      <updated>1738048430569</updated>
+      <updated>1741619910808</updated>
     </task>
     <task id="LOCAL-00006" summary="addNewFile">
       <option name="closed" value="true" />
@@ -218,6 +219,7 @@
       <option name="project" value="LOCAL" />
       <updated>1738492778320</updated>
     </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -234,12 +236,27 @@
             <list>
               <RecentGroup>
                 <option name="FILTER_VALUES">
-                  <option value="HEAD" />
+                  <option value="main" />
                 </option>
               </RecentGroup>
               <RecentGroup>
                 <option name="FILTER_VALUES">
-                  <option value="main" />
+                  <option value="homework-1/fixes" />
+                </option>
+              </RecentGroup>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="work-1" />
+                </option>
+              </RecentGroup>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="origin/work-1" />
+                </option>
+              </RecentGroup>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="HEAD" />
                 </option>
               </RecentGroup>
             </list>
@@ -291,11 +308,16 @@
     <MESSAGE value="task-5051 323" />
     <MESSAGE value="addNewFile" />
     <MESSAGE value="squashed commits" />
-    <MESSAGE value="rr" />
     <MESSAGE value="TASK-123 Added first PR0001" />
     <MESSAGE value="commit0011" />
     <MESSAGE value="cc" />
     <MESSAGE value="move all in main" />
-    <option name="LAST_COMMIT_MESSAGE" value="move all in main" />
+    <MESSAGE value="rr" />
+    <MESSAGE value="fixes-1&#10;исправил все замечания кроме замечания для функции нахождения цифр кратных трем и не кратных двум" />
+    <MESSAGE value="homework-2&#10;калькулятор в различных СС (только операция &quot;+&quot;)" />
+    <MESSAGE value="homework-2-addition исправил большую часть замечаний из комментариев к ПР" />
+    <MESSAGE value="homework-2-addition &#10;исправлены все замечания" />
+    <MESSAGE value="homework-2-subtraction &#10;реализована функция деления, а также сопутствующие функции" />
+    <option name="LAST_COMMIT_MESSAGE" value="homework-2-subtraction &#10;реализована функция деления, а также сопутствующие функции" />
   </component>
 </project>
