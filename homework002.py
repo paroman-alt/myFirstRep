@@ -35,7 +35,8 @@ def add_nulls_for_equality(str1, str2):
 # функция стирает из начала строки нули если они есть
 def null_remover(str1):
     i = 0
-    while str1[i] == '0':
+    # len(str1[i:]) > 1 чтобы не ловить ошибку когда функция получает на вход "0"
+    while len(str1[i:]) > 1 and str1[i] == '0':
         i += 1
     return str1[i:]
 
@@ -53,19 +54,20 @@ def get_post_borrow_value(num1, num_sys, entry):
 # print(get_post_borrow_value('1008000', 10, 4)) # -----> 0998000
 
 
-# функция сравнивает два числа в заданной СС и возвращает большее
-def get_greater_num(num1, num2, num_sys):
-    num1_dec = int(num1, num_sys) # перевод числа из заданной сс (в строковом типе) в десятичную (в int)
-    num2_dec = int(num2, num_sys)
+# функция сравнивает два числа в заданной СС и возвращает True если второе больше первого
+def num2_greater_than_num1(num1, num2, num_sys):
+    num1_dec = int(str(num1), num_sys) # перевод числа из заданной сс (в строковом типе) в десятичную (в int)
+    num2_dec = int(str(num2), num_sys)
     if num2_dec > num1_dec:
-        return num2
+        return True
     else:
-        return num1
+        return False
 
 
+# функция вычитания для заданной СС
 def calc_subtraction(num1, num2, num_sys):
     # не уверен, что такое использование рекурсии допустимо
-    if get_greater_num(num1, num2, num_sys) == num2:
+    if num2_greater_than_num1(num1, num2, num_sys):
         return '-' + calc_subtraction(num2, num1, num_sys)
     result = []
     max_len_num = max(len(str(num1)), len(str(num2)))
@@ -78,8 +80,37 @@ def calc_subtraction(num1, num2, num_sys):
             num1 = get_post_borrow_value(num1, num_sys, i)
     result = ''.join(reversed(result))
     return null_remover(result)
+# print(calc_subtraction(444, 222, 10))
 
 
+# функция представляет деление как вычитания в соответствии с массивом чаров
+# может быть правильнее написать бесконечный цикл и добавить break'и по условиям?
+def from_symbols_division_to_subtraction(num1, num2, num_sys):
+#     23/16 = 23 - 16
+    num1, num2 = str(num1), str(num2)
+    res = '0'
+    while num1 != '0' and num1[0] != '-':
+        num1 = calc_subtraction(num1, num2, num_sys)
+        res += 1 # в результате функция вернет ответ в десятичной СС
+    # если в результате вычитаний ушли в минус, то получилось на одну итерацию больше чем должно быть в ответе
+    if num1[0] == '-':
+        return res -1
+    return res
+
+
+# функция деления для заданной СС
+def calc_division(num1, num2, num_sys):
+    num1, num2 = str(num1), str(num2)
+    res = str()
+    remainder = str()
+    initial_bound = 0
+    for i in range(len(num1)):
+        res_div_symbol = from_symbols_division_to_subtraction(num1[initial_bound:i +1], num2, num_sys)
+        # print(res_div_symbol)
+    return null_remover(res)
+
+print(from_symbols_division_to_subtraction(100, '9', 16))
+print(calc_division(100, 2, 10))
 # print(add_nulls_for_equality('232ee1', '3213'))
-# print(calc_subtraction('99009', '1018', 11))
+# print(calc_subtraction('100', '1', 16))
 # print(calc_validation(5, 8))
