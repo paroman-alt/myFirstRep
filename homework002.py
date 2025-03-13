@@ -10,12 +10,13 @@
 # Введите второе число: 7
 # ___________
 # Результат: 130
-
+from math import remainder
 
 symbols = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9',
            'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J',
            'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T',
            'U', 'V', 'W', 'X', 'Y', 'Z']
+
 
 # функция добавляет нули в начало меньшей из двух строк для уравнивания их по длине
 def add_nulls_for_equality(str1, str2):
@@ -29,6 +30,15 @@ def add_nulls_for_equality(str1, str2):
     return str1, str2
 # еще нашел метод zfill который нулями строку дополняет
 # string.zfill('1', 4) ----> '0001'
+
+
+# функция стирает из начала строки нули если они есть
+def null_remover(str1):
+    i = 0
+    while str1[i] == '0':
+        i += 1
+    return str1[i:]
+
 
 def calc_addition(num1, num2, num_sys):
     result = []
@@ -44,6 +54,7 @@ def calc_addition(num1, num2, num_sys):
         result.append(str(remaind))
     result = ''.join(reversed(result))
     return result
+
 
 # валидация ввода:
     # 1 - числа должны соответствовать заданной СС
@@ -61,6 +72,32 @@ def calc_validation(num_sys, num = None, operation = None): # возвращае
         return False
     return True
 
+
+def from_symbols_multiplication_to_addition(num1, num2, num_sys):
+    if len(num1) > 1 or len(num2) > 1:
+        return
+    res = '0'
+    for i in range(symbols.index(num1)):
+        res = calc_addition(res, num2, num_sys)
+    return res
+
+
+def calc_multiplication(num1, num2, num_sys):
+    res = '0'
+    for i in range(len(num2) -1, -1, -1):
+        ans = '0'
+        for j in range(len(num1) -1, -1, -1):
+            two_symb_sum = from_symbols_multiplication_to_addition(num1[j], num2[i], num_sys)
+            two_symb_sum += '0' * (len(num1)-1 - j)
+            ans = calc_addition(ans, two_symb_sum, num_sys)
+            # print('i =', i, 'j =', j, '   ', num1[j], '*', num2[i], '= two_symb_sum =', two_symb_sum, '    ans =', ans)
+        ans += '0' * (len(num2)-1 - i) # когда в столбик умножаешь, полученные слагаемые каждый раз сдвигаются на разряд
+        res = calc_addition(res, ans, num_sys)
+    return res
+
+
+# print(from_symbols_multiplication_to_addition('F', 'F', 16))
 # print(add_nulls_for_equality('232ee1', '3213'))
-print(calc_addition('8', '1', 9))
+# print(calc_addition('0', '1', 9))
+print(calc_multiplication('ZZ', 'ZX003', 36))
 # print(calc_validation(5, 8))
