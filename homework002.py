@@ -12,9 +12,6 @@
 # Результат: 130
 
 
-from operator import index
-
-
 symbols = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9',
            'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J',
            'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T',
@@ -144,38 +141,95 @@ def calc_subtraction(num1, num2, num_sys):
 
 # функция представляет деление как вычитания в соответствии с массивом чаров
 # может быть правильнее написать бесконечный цикл и добавить break'и по условиям?
-def from_symbols_division_to_subtraction(num1, num2, num_sys):
-#     23/16 = 23 - 16
+#     44/16 = 44 - 16 - 16 = 2 (остаток 12)
+# мне не нравится как я написал эту функцию (надо подумать еще раз)
+def from_symbols_division_to_subtraction(num1, num2, num_sys, get_remainder = False):
+    # аргумент get_remainder указывает на то что необходимо получить на выходе - результат деления или остаток
+    # (при True возвращает остаток от деления)
     num1, num2 = str(num1), str(num2)
-    res = '0'
+    result = '0'
+    remainder = num2
     while num1 != '0' and num1[0] != '-':
         num1 = calc_subtraction(num1, num2, num_sys)
-        res += 1 # в результате функция вернет ответ в десятичной СС
+        result = calc_addition(result, 1, num_sys)
+    if result != '0':
+        remainder = '0'
     # если в результате вычитаний ушли в минус, то получилось на одну итерацию больше чем должно быть в ответе
-    if num1[0] == '-':
-        return res -1
-    return res
+    if num1[0] == '-': # возвращение на значения предыдущей итерации после выхода из цикла, выглядит как костыль
+        remainder = calc_subtraction(num2, num1[1:], num_sys)
+        result = calc_subtraction(result, 1, num_sys)
+    if get_remainder:
+        return remainder
+    else:
+        return result
 
 
 # функция деления для заданной СС
-def calc_division(num1, num2, num_sys):
+def calc_division(num1, num2, num_sys, num_of_char_after_comma = 2):
+    def calc_division_cycle(num1, num2, num_sys):
+        initial_bound = 0
+        remaind = '0'
+        res = ''
+        for i in range(1, len(num1) +1):
+            dividend = null_remover(remaind + num1[initial_bound:i])
+            res_div_symbol = from_symbols_division_to_subtraction(dividend, num2, num_sys)
+            res += res_div_symbol
+            print(res)
+            if res_div_symbol == '0':
+                continue
+            remaind = from_symbols_division_to_subtraction(dividend, num2, num_sys, True)
+            initial_bound = +i
+        return res, dividend
+
     num1, num2 = str(num1), str(num2)
-    res = str()
-    remainder = str()
-    initial_bound = 0
-    for i in range(len(num1)):
-        res_div_symbol = from_symbols_division_to_subtraction(num1[initial_bound:i +1], num2, num_sys)
-        # print(res_div_symbol)
-    return null_remover(res)
+    res, dividend = calc_division_cycle(num1, num2, num_sys)
+    # после запятой
+    remaind_from_before_comma = from_symbols_division_to_subtraction(dividend, num2, num_sys, True)
+    num1_comma = remaind_from_before_comma + '0' * (num_of_char_after_comma - len(remaind_from_before_comma))
+    res_comma, dividend = calc_division_cycle(num1_comma, num2, num_sys)
+    return null_remover(res) + ',' + res_comma
+
+    # num1, num2 = str(num1), str(num2)
+    # res = []
+    # remaind = '0' # остаток от вычитания (при делении в столбик)
+    # initial_bound = 0 # индекс первого символа для уменьшаемого (при делении в столбик)
+    # dividend = str() # делимое
+    # for i in range(1, len(num1) +1):
+    #     dividend = null_remover(remaind + num1[initial_bound:i])
+    #     res_div_symbol = from_symbols_division_to_subtraction(dividend, num2, num_sys)
+    #     res.append(res_div_symbol)
+    #     print('===', dividend, '/', num2, '=', res_div_symbol, 'and', remaind)
+    #     if res_div_symbol == '0':
+    #         continue
+    #     remaind = from_symbols_division_to_subtraction(dividend, num2, num_sys, True)
+    #     initial_bound = +i
+    #     print(dividend, '/', num2, '=', res_div_symbol, 'and', remaind)
+    # # расчет символов идущих после запятой
+    # remaind = from_symbols_division_to_subtraction(dividend, num2, num_sys, True)
+    # num1_comma = remaind + '0' * (num_of_char_after_comma - len(remaind))
+    # res_comma = []
+    # remaind = '0'
+    # initial_bound = 0
+    # for i in range(1, len(num1_comma) +1):
+    #     dividend = null_remover(remaind + num1_comma[initial_bound:i])
+    #     res_div_symbol = from_symbols_division_to_subtraction(dividend, num2, num_sys)
+    #     res_comma.append(res_div_symbol)
+    #     if res_div_symbol == '0':
+    #         continue
+    #     remaind = from_symbols_division_to_subtraction(dividend, num2, num_sys, True)
+    #     initial_bound = +i
+    # return res, res_comma
 
 
+
+
+# print(from_symbols_division_to_subtraction(0, 10, 10, True))
+print(calc_division(2001, 100, 10, 6))
+# print(calc_multiplication('ZZ', 'ZX003', 36))
 # print(from_symbols_multiplication_to_addition('F', 'F', 16))
 # print(add_nulls_for_equality('232ee1', '3213'))
 # print(calc_addition('0', '1', 9))
-print(calc_multiplication('ZZ', 'ZX003', 36))
 # print(calc_validation(5, 8))
-print(from_symbols_division_to_subtraction(100, '9', 16))
-print(calc_division(100, 2, 10))
 # print(add_nulls_for_equality('232ee1', '3213'))
 # print(calc_subtraction('100', '1', 16))
 # print(calc_validation(5, 8))
