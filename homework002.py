@@ -42,6 +42,7 @@ def null_remover(str1):
 
 
 def calc_addition(num1, num2, num_sys):
+    num_sys = int(num_sys)
     result = []
     remaind = 0 # учет единицы в старшем разряде
     max_len_num = max(len(str(num1)), len(str(num2)))
@@ -63,16 +64,15 @@ def calc_addition(num1, num2, num_sys):
     # 3 - для num_sys только int числа и от 2 до 36
     # 4 - для operation только "+", "-", "/", "*"
 def calc_validation(num_sys, num = None, operation = None): # возвращает true если валидно и false если невалидно
-    if type(num_sys) is not int or num_sys > 36 or num_sys < 2: # Основание СС должно быть целым числом от 2 до 36
+    if not num_sys.isdigit() or int(num_sys) > 36 or int(num_sys) < 2: # Основание СС должно быть целым числом от 2 до 36
         return False
     if num != None: # для того чтобы эту функцию можно было применить после ввода пользователем СС
         for digit in str(num):
-            if digit not in symbols[0: num_sys]: # Число должно состоять только из символов 0-9 и A-V и не должно выходить за рамки заданной СС
+            if digit not in symbols[0: int(num_sys)]: # Число должно состоять только из символов 0-9 и A-V и не должно выходить за рамки заданной СС
                 return False
     if operation != None and operation not in ["+", "-", "/", "*"]:
         return False
     return True
-
 
 def from_symbols_multiplication_to_addition(num1, num2, num_sys):
     if len(num1) > 1 or len(num2) > 1:
@@ -84,6 +84,7 @@ def from_symbols_multiplication_to_addition(num1, num2, num_sys):
 
 
 def calc_multiplication(num1, num2, num_sys):
+    num_sys = int(num_sys)
     res = '0'
     for i in range(len(num2) -1, -1, -1):
         ans = '0'
@@ -122,6 +123,7 @@ def num2_greater_than_num1(num1, num2, num_sys):
 
 # функция вычитания для заданной СС
 def calc_subtraction(num1, num2, num_sys):
+    num_sys = int(num_sys)
     # не уверен, что такое использование рекурсии допустимо
     if num2_greater_than_num1(num1, num2, num_sys):
         return '-' + calc_subtraction(num2, num1, num_sys)
@@ -166,6 +168,7 @@ def from_symbols_division_to_subtraction(num1, num2, num_sys, get_remainder = Fa
 
 # функция деления для заданной СС
 def calc_division(num1, num2, num_sys, num_of_char_after_comma = 2):
+    num_sys = int(num_sys)
     def calc_division_cycle(num1, num2, num_sys):
         initial_bound = 0
         remaind = '0'
@@ -174,57 +177,25 @@ def calc_division(num1, num2, num_sys, num_of_char_after_comma = 2):
             dividend = null_remover(remaind + num1[initial_bound:i])
             res_div_symbol = from_symbols_division_to_subtraction(dividend, num2, num_sys)
             res += res_div_symbol
-            print(res)
+            # print(res)
             if res_div_symbol == '0':
                 continue
             remaind = from_symbols_division_to_subtraction(dividend, num2, num_sys, True)
             initial_bound = +i
-        return res, dividend
-
+        return res, dividend # возврат divident нужен был для попытки реализации вычисления знаков после запятой
     num1, num2 = str(num1), str(num2)
     res, dividend = calc_division_cycle(num1, num2, num_sys)
-    # после запятой
-    remaind_from_before_comma = from_symbols_division_to_subtraction(dividend, num2, num_sys, True)
-    num1_comma = remaind_from_before_comma + '0' * (num_of_char_after_comma - len(remaind_from_before_comma))
-    res_comma, dividend = calc_division_cycle(num1_comma, num2, num_sys)
-    return null_remover(res) + ',' + res_comma
-
-    # num1, num2 = str(num1), str(num2)
-    # res = []
-    # remaind = '0' # остаток от вычитания (при делении в столбик)
-    # initial_bound = 0 # индекс первого символа для уменьшаемого (при делении в столбик)
-    # dividend = str() # делимое
-    # for i in range(1, len(num1) +1):
-    #     dividend = null_remover(remaind + num1[initial_bound:i])
-    #     res_div_symbol = from_symbols_division_to_subtraction(dividend, num2, num_sys)
-    #     res.append(res_div_symbol)
-    #     print('===', dividend, '/', num2, '=', res_div_symbol, 'and', remaind)
-    #     if res_div_symbol == '0':
-    #         continue
-    #     remaind = from_symbols_division_to_subtraction(dividend, num2, num_sys, True)
-    #     initial_bound = +i
-    #     print(dividend, '/', num2, '=', res_div_symbol, 'and', remaind)
-    # # расчет символов идущих после запятой
-    # remaind = from_symbols_division_to_subtraction(dividend, num2, num_sys, True)
-    # num1_comma = remaind + '0' * (num_of_char_after_comma - len(remaind))
-    # res_comma = []
-    # remaind = '0'
-    # initial_bound = 0
-    # for i in range(1, len(num1_comma) +1):
-    #     dividend = null_remover(remaind + num1_comma[initial_bound:i])
-    #     res_div_symbol = from_symbols_division_to_subtraction(dividend, num2, num_sys)
-    #     res_comma.append(res_div_symbol)
-    #     if res_div_symbol == '0':
-    #         continue
-    #     remaind = from_symbols_division_to_subtraction(dividend, num2, num_sys, True)
-    #     initial_bound = +i
-    # return res, res_comma
+    # # после запятой
+    # remaind_from_before_comma = from_symbols_division_to_subtraction(dividend, num2, num_sys, True)
+    # num1_comma = remaind_from_before_comma + '0' * (num_of_char_after_comma - len(remaind_from_before_comma))
+    # res_comma, dividend = calc_division_cycle(num1_comma, num2, num_sys)
+    return null_remover(res)
 
 
 
 
 # print(from_symbols_division_to_subtraction(0, 10, 10, True))
-print(calc_division(2001, 100, 10, 6))
+# print(calc_division(10, 3, 10, 6))
 # print(calc_multiplication('ZZ', 'ZX003', 36))
 # print(from_symbols_multiplication_to_addition('F', 'F', 16))
 # print(add_nulls_for_equality('232ee1', '3213'))
