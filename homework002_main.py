@@ -1,4 +1,5 @@
 from homework002 import calc_addition, calc_subtraction, calc_division, calc_multiplication, calc_validation
+import questionary
 
 
 result = ''
@@ -21,10 +22,14 @@ while True:
               ' Повторите ввод. ---')
         number2 = input('Введите второе число: ')
 
-    operation = input('Введите операцию: ')
-    while not calc_validation(number_sys, operation = operation):
-        print('--- Поддерживаются только операции: -, +, /, *! Повторите ввод.')
-        operation = input('Введите операцию: ')
+    operation = questionary.select(
+        "выберите операцию:", choices=["+", "-", "/", "*"]
+    ).ask()
+
+    # operation = input('Введите операцию: ')
+    # while not calc_validation(number_sys, operation = operation):
+    #     print('--- Поддерживаются только операции: -, +, /, *! Повторите ввод.')
+    #     operation = input('Введите операцию: ')
 
     number_sys = int(number_sys)
     match operation:
@@ -38,5 +43,6 @@ while True:
             result = calc_multiplication(number1, number2, number_sys)
 
     print('Результат: ', number1, operation, number2, '=', result)
-    print('Результат в десятичной СС: ', int(number1, number_sys), operation, int(number2, number_sys), '=', int(result, number_sys))
+    if int(number_sys) != 10:
+        print('Результат в десятичной СС: ', int(number1, number_sys), operation, int(number2, number_sys), '=', int(result, number_sys))
     print('###########################################')
