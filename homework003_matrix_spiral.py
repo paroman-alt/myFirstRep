@@ -58,9 +58,9 @@ def fill_mass_el_down_to_up(curr_row, curr_column, mass):
 
 
 
+
 if __name__ == '__main__':
     while True:
-        current_number = 1
         matrix_size = input('Введите размерность матрицы: ')
         if matrix_size.isdigit():
             matrix_size = int(matrix_size)
@@ -68,14 +68,35 @@ if __name__ == '__main__':
             print('Размерность матрицы должна задаваться целым положительным числом!')
             continue
 
+        spiral_clockwise = input('Задайте параметр вывода спирали, по часовой или против часовой (по/против): ').replace(' ', '')
+        while spiral_clockwise != 'по' and spiral_clockwise != 'против':
+            spiral_clockwise = input(
+                'Задайте параметр вывода используя только одно из слов "по" или "против": ').replace(' ', '')
+
         matrix1 = [[0 for i in range(matrix_size)] for j in range(matrix_size)]
-        row = 0
-        column = -1 # -1 для того чтобы функция в цикле сработала при первой итерации
-        while current_number <= matrix_size**2:
-            row, column = fill_mass_el_left_to_right(row, column +1, matrix1)
-            row, column = fill_mass_el_up_to_down(row +1, column, matrix1)
-            row, column = fill_mass_el_right_to_left(row, column -1, matrix1)
-            row, column = fill_mass_el_down_to_up(row -1, column, matrix1)
+        current_number = 1 # глобальная переменная
+
+        match spiral_clockwise:
+            case 'по':
+                # начальное положение [0][0]
+                row = 0
+                column = -1  # -1 для того чтобы функция в цикле сработала при первой итерации
+                while current_number <= matrix_size ** 2:
+                    row, column = fill_mass_el_left_to_right(row, column + 1, matrix1)
+                    row, column = fill_mass_el_up_to_down(row + 1, column, matrix1)
+                    row, column = fill_mass_el_right_to_left(row, column - 1, matrix1)
+                    row, column = fill_mass_el_down_to_up(row - 1, column, matrix1)
+            case 'против':
+                # начальное положение [0][-1]
+                row = 0
+                column = 1
+                while current_number <= matrix_size ** 2:
+                    row, column = fill_mass_el_up_to_down(row, column - 1, matrix1)
+                    row, column = fill_mass_el_left_to_right(row, column + 1, matrix1)
+                    row, column = fill_mass_el_down_to_up(row - 1, column, matrix1)
+                    row, column = fill_mass_el_right_to_left(row, column - 1, matrix1)
+
+
 
         print()
         print_mass_like_matrix(matrix1)
